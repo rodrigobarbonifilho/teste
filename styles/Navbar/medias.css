@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@media (min-width: 992px) {
+  header .header-content-wrapper {
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 80%;
+  }
+
+  header .header-content-wrapper .mostra-lista-links-botao {
+    display: none;
+  }
+
+  header .header-content-wrapper nav {
+    position: relative;
+    display: block;
+    transform: translate(0);
+  }
+  
+  header .header-content-wrapper nav.visible {
+    display: block;
+    transform: translate(0);
+  }
+  
+  header .header-content-wrapper #lista-links {
+    flex-direction: row;
+  }
+  
+  header .header-content-wrapper #lista-links li {
+    background: transparent;
+    border: none;
+    width: max-content;
+    padding: 20px;
+  }
+  
+  header .header-content-wrapper #lista-links li:last-child {
+    border: none;
+  }
+}
